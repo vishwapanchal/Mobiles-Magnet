@@ -6,9 +6,17 @@ import { useNavigate } from "react-router-dom";
 import "./cart.css";
 
 export const Cart = () => {
-  const { cartItems, getTotalCartAmount, checkout } = useContext(ShopContext);
+  const { cartItems, getTotalCartAmount, checkout, orderform } = useContext(ShopContext);
   const totalAmount = getTotalCartAmount();
   const navigate = useNavigate();
+
+  // Debugging: Check if checkout function is available in the context
+  console.log("Checkout function:", checkout);
+
+  const handleCheckout = () => {
+    checkout();
+    navigate("/checkout");
+  };
 
   return (
     <div className="cart">
@@ -28,21 +36,23 @@ export const Cart = () => {
       {totalAmount > 0 ? (
         <div className="checkout">
           <p> Subtotal: <h1>&#8377;{totalAmount} </h1></p>
-          
-          <button  class="btn btn-info" onClick={() => navigate("/")}>Continue Shopping</button> &nbsp;&nbsp;&nbsp;
-          <button  class="btn btn-success"
-            onClick={() => {
-              checkout();
-              navigate("/checkout");
-            }}
-          >
+
+          {/* Use className instead of class for JSX */}
+          <button className="btn btn-info" onClick={() => navigate("/")}>
+            Continue Shopping
+          </button>{" "}
+          &nbsp;&nbsp;&nbsp;
+          <button className="btn btn-success" onClick={handleCheckout}>
             Checkout
           </button>
+          <br />
         </div>
-      ) : (<>
-        <h1>Your Shopping Cart is Empty </h1>
-        <i class='bx bx-sad' style={{fontSize:"195px",color:"red"}}></i>
+      ) : (
+        <>
+          <h1>Your Shopping Cart is Empty </h1>
+          <i className='bx bx-sad' style={{ fontSize: "195px", color: "red" }}></i>
         </>
+        
       )}
     </div>
   );
