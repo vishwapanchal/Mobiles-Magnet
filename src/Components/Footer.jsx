@@ -20,9 +20,9 @@ export const Footer = () => {
               <div class = "text-md-">
               <p style={{ fontSize: '20px', padding: 0, margin: 0, color: 'red', fontWeight: 'bold' }}>TEAM<br /><hr /> </p>
               <a  href="https://github.com/vishwapanchal" target="_blank" style={{ color: 'blue', fontSize: '18px',fontFamily:"revert-layer",textDecoration:"none", fontWeight:"bold"}}>
-                <i className='bx bxl-github bx-spin' style={{color:"Black",fontSize:"20px"}}></i> Vishwa Panchal - Team Lead, Front-End developer  & Project Coordinator </a><br />
+                <i className='bx bxl-github bx-spin' style={{color:"Black",fontSize:"20px"}}></i> Vishwa Panchal - Team Lead & Project Coordinator </a><br />
               <a  href="https://github.com/mustafa505k" target="_blank" style={{ color: 'green', fontSize: '15px',textDecoration:"none", fontWeight:"bold" }}>
-                <i className='bx bxl-github  bx-spin' style={{color:"Black"}}></i> Mustafa Ameen - Front-End Developer
+                <i className='bx bxl-github  bx-spin' style={{color:"Black"}}></i> Mustafa Ameen - Team mate
               </a><br />
               <a  href="https://github.com/vishwapanchal" target="_blank" style={{ color: 'green', fontSize: '15px',textDecoration:"none", fontWeight:"bold" }}>
                 <i className='bx bxl-github  bx-spin' style={{color:"Black"}}></i> Sadanand - Team mate</a> <br />
