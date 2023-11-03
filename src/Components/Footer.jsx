@@ -25,9 +25,9 @@ export const Footer = () => {
                 <i className='bx bxl-github  bx-spin' style={{color:"Black"}}></i> Mustafa Ameen - Front-End Developer
               </a><br />
               <a  href="https://github.com/vishwapanchal" target="_blank" style={{ color: 'green', fontSize: '15px',textDecoration:"none", fontWeight:"bold" }}>
-                <i className='bx bxl-github  bx-spin' style={{color:"Black"}}></i> Sadanand - Documentation Handler</a> <br />
+                <i className='bx bxl-github  bx-spin' style={{color:"Black"}}></i> Sadanand - Team mate</a> <br />
               <a  href="https://github.com/sharankuamr" target="_blank" style={{ color: 'green', fontSize: '15px',textDecoration:"none", fontWeight:"bold" }}>
-                <i className='bx bxl-github  bx-spin'style={{color:"Black"}}></i> SharanKumar Tadkal - PPT Maker</a></div>
+                <i className='bx bxl-github  bx-spin'style={{color:"Black"}}></i> SharanKumar Tadkal - Team Mate</a></div>
             </div>
           </div>
           <div className="row">
